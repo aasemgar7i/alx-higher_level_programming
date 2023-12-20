@@ -10,7 +10,7 @@ class Square:
         """Args:
                size (int): SIZE of input
         """
-        self.__size = size
+        self.size = size
 
     @property
     def size(self):

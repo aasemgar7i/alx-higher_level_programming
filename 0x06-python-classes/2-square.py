@@ -1,16 +1,14 @@
 #!/usr/bin/python3
 
-"""start here"""
+"""start here>>"""
 
 
 class Square:
-    """want to get square of an int"""
+    """NEW Square!."""
 
     def __init__(self, size=0):
-        """check and inform for int
-
-        Args:
-            size (int): 0
+        """Args:
+               size (int): SIZE of input
         """
         if not isinstance(size, int):
             raise TypeError("size must be an intger")

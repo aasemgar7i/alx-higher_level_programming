@@ -4,7 +4,7 @@
 
 
 class Square:
-    """get size of input"""
+    """New Square!."""
 
     def __init__(self, size):
         """Args:

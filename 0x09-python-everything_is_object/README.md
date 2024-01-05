@@ -11,6 +11,8 @@ The 'is' operator checks if two variables reference the same object in memory
 
 The '26-answer.txt' file 'True' Python optimizes and reuses the same object for them in memory
 
+Makeing objects are created to represent the line numbers where the print statements are located:
+
 -----------
 viewed by Aasem Ali.
 

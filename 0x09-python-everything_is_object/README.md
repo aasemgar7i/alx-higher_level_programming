@@ -9,6 +9,8 @@ The '==' operator checks if the values of the two variables
 
 The 'is' operator checks if two variables reference the same object in memory
 
+The '26-answer.txt' file 'True' Python optimizes and reuses the same object for them in memory
+
 -----------
 viewed by Aasem Ali.
 

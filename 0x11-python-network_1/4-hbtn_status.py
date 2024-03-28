@@ -2,16 +2,12 @@
 """fetches."""
 
 
-import urllib.request
-import urllib.error
-import sys
+import requests
 
-if __name__ == "__main__":
-    url = sys.argv[1]
+url = 'https://alx-intranet.hbtn.io/status'
 
-    try:
-        with urllib.request.urlopen(url) as response:
-            body = response.read().decode('utf-8')
-            print(body)
-    except urllib.error.HTTPError as e:
-        print("Error code:", e.code)
+response = requests.get(url)
+
+print("Body response:")
+print("\t- type:", type(response.text))
+print("\t- content:", response.text)

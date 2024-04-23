@@ -8,7 +8,7 @@ if (process.argv.length !== 3) {
 }
 
 const movieId = process.argv[2];
-const apiUrl = `https://swapi-api.alx-tools.com/api/films/${movieId}`;
+const apiUrl = "https://swapi-api.alx-tools.com/api/films/${movieId}";
 
 // Make a GET request to the Star Wars API endpoint
 request(apiUrl, (error, response, body) => {
@@ -17,7 +17,7 @@ request(apiUrl, (error, response, body) => {
     console.error(error);
   } else if (response.statusCode !== 200) {
     // Print the status code if it's not 200 (OK)
-    console.error(`Failed to fetch data: ${response.statusCode}`);
+    console.error("Failed to fetch data: ${response.statusCode}");
   } else {
     try {
       // Parse the response body as JSON
@@ -32,7 +32,7 @@ request(apiUrl, (error, response, body) => {
             console.error(charError);
           } else if (charResponse.statusCode !== 200) {
             // Print the status code if it's not 200 (OK)
-            console.error(`Failed to fetch character data: ${charResponse.statusCode}`);
+            console.error("Failed to fetch character data: ${charResponse.statusCode}");
           } else {
             // Parse the character data as JSON
             const character = JSON.parse(charBody);
@@ -47,7 +47,7 @@ request(apiUrl, (error, response, body) => {
     movieData.characters.forEach(printCharacter);
     } catch (parseError) {
       // Print the parse error if JSON parsing fails
-      console.error('Failed to parse response:', parseError);
+      console.error("Failed to parse response:", parseError);
     }
   }
 });

@@ -15,8 +15,5 @@ fs.writeFile(filePath, content, 'utf-8', (err) => {
   if (err) {
     // Print the error object if an error occurred
     console.error(err);
-  } else {
-    // Print a success message if writing was successful
-    console.log('Content has been written to the file:', filePath);
   }
 });

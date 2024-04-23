@@ -44,8 +44,7 @@ request(apiUrl, (error, response, body) => {
       };
 
       // Loop through the list of characters and print each one
-      movieData.characters.forEach(printCharacter);
-
+    movieData.characters.forEach(printCharacter);
     } catch (parseError) {
       // Print the parse error if JSON parsing fails
       console.error('Failed to parse response:', parseError);

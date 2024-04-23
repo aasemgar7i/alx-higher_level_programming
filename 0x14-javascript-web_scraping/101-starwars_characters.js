@@ -34,11 +34,11 @@ request(apiUrl, (error, response, body) => {
           if (charError) {
             // Print the error if a request error occurs
             console.error(charError);
-            return; // Exit recursion in case of error
+            // Exit recursion in case of error
           } else if (charResponse.statusCode !== 200) {
             // Print the status code if it's not 200 (OK)
             console.error(`Failed to fetch character data: ${charResponse.statusCode}`);
-            return; // Exit recursion in case of error
+            // Exit recursion in case of error
           } else {
             // Parse the character data as JSON
             const character = JSON.parse(charBody);
